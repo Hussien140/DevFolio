@@ -1,0 +1,446 @@
+/* to make scrolling smooth */
+*{
+    scroll-behavior: smooth !important;
+}
+/* website font */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ============== style for home============= */
+
+header {
+    background-image: url(../imgs/intro-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+}
+.nav-layer{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 85vh;
+}
+.main-heading .fs-1  {
+    font-size: 72px !important;
+}
+.main-heading .fs-2  {
+    font-size: 40px !important;
+}
+a[href="#home"]::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #fff;
+    width: 36px;
+    left: 20px;
+    bottom: -1px;
+}
+a[class*="nav-link"]:hover::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #fff;
+    width: 36px;
+    left: 20px;
+    bottom: -1px;
+}
+/* ================== style for About me section================ */
+
+.content h5 {
+    position: relative;
+}
+.content h5:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    left: 1px;
+    bottom: 5px;
+}
+.line {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+/*======================== style for sevices seciton================ */
+
+.icon {
+    width: 7rem;
+    height: 7rem;
+    background-color: #fff;   
+    border: 10px solid #0078ff !important;
+}
+.item {
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.icon:hover {
+    background-color: #0078ff;
+    color: #fff;
+    border:10px solid #b6c9dd !important;
+    transition: all 500ms ease;
+}
+.service-bg {
+    background-image: url(../imgs/post-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 60vh;
+}
+.serv-bg-layer,.overlay, .contact-overlay  {
+    background-color: #0077ffb2;
+    height: 100%;
+    width: 100%;
+}
+.serv-icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;   
+    border: 9px solid #cde1f8 !important;
+}
+
+/* ====================style for PORTFOLIO section====================== */
+
+.proj-1 span {
+    font-size: smaller;
+}
+.first-span {
+    margin-left: 1rem;
+    position: relative;
+    padding-right: 2px;
+}
+.first-span::after {
+    content: '/';
+    position: absolute;
+    color: black;
+    top: 0px;
+    right: -6px;
+}
+.scnd-span{
+    margin-left: 0.25rem;
+}
+.plus-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;   
+    border: 2px solid #0078ff !important;
+}
+.proj-1 {
+    cursor: pointer;
+    overflow: hidden;
+}
+.proj-1 img {
+    transition: 0.5s all ease-in-out;
+}
+.proj-1:hover img{
+    transform: scale(1.1);
+}
+
+/* ===============review section==================== */
+
+#review {
+    background-image: url(../imgs/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 80vh;
+}
+.rev-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #fff;   
+    border: 2px solid white !important;
+}
+
+/* =================== blog section ===================  */
+
+.text-muted img{
+    width: 10%;
+}
+.img-btn {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.img-btn button {
+    width: 5.6rem;
+    height: 1.8rem;
+    border: 1px solid #0078ff ;
+    border-radius: 0% !important;
+}
+
+/* =======================contact form=========================== */
+
+#contact-form {
+    background-image: url(../imgs/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 110vh;
+}
+.undeline h5{
+    position: relative;
+}
+ .undeline h5:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    left: 1px;
+    bottom: -9px;
+}
+.line-two h5{
+    position: relative;
+}
+.line-two h5:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    left: 1px;
+    bottom: -9px;
+}
+.social-icons {
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;   
+    border: 4px solid #0078ff !important;
+    transition: all 500ms ease;
+}
+.social-icons:hover {
+    background-color: #0078ff;
+    color: #fff;
+    border:4px solid #b6c9dd !important;
+}
+.undeline button {
+    transition: 200ms ease-in-out;
+    width: 40%;
+}
+.undeline button:hover {
+border: 4px solid #b6c9dd !important;
+}
+
+/* ===================media query======================== */
+
+ @media (max-width: 767.98px) { 
+    .service-bg {
+        background-image: url(../imgs/post-3.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 150vh;
+    }
+    #review {
+        background-image: url(../imgs/overlay-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 100vh;
+    }
+    #contact-form {
+        background-image: url(../imgs/overlay-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 230vh;
+    }
+    .undeline button{
+        width: 70%;
+    }
+    .img-btn {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #contact-form .container {
+        width: 100% !important;
+    }
+
+}
+@media (min-width: 576px) { 
+    #about .container {
+        width: 100% !important;
+    }
+    #work .container {
+        width: 100% !important;
+    }
+    #services .container {
+        width: 100% !important;
+    }
+    #blog .container {
+        width: 100% !important;
+    }
+
+    #contact-form {
+        background-image: url(../imgs/overlay-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 235vh;
+    }
+    .undeline button{
+        width: 50%;
+    }
+    #contact-form .container {
+        width: 100% !important;
+    }
+    #contact-form {
+        background-image: url(../imgs/overlay-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 210vh;
+    }
+    .img-btn {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+@media (min-width: 768px) { 
+    #about .container {
+        width: 100% !important;
+    }
+    #work .container {
+        width: 100% !important;
+    }
+    #services .container {
+        width: 100% !important;
+    }
+    #blog .container {
+        width: 100% !important;
+    }
+    #contact-form {
+        background-image: url(../imgs/overlay-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 160vh;
+    }
+    #contact-form .container {
+        width: 100% !important;
+    }
+    .undeline button{
+        width: 60%;
+    } 
+    .img-btn {
+        position: absolute;
+        top: 27%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+}
+ @media (min-width: 992px) { 
+    #about .container {
+        width: 100% !important;
+    }
+    #services .container {
+        width: 100% !important;
+    }
+    #blog .container {
+        width: 100% !important;
+    }
+    #contact-form {
+        background-image: url(../imgs/overlay-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 155vh;
+    }
+    .undeline button{
+        width: 60%;
+    } 
+    .img-btn {
+        position: absolute;
+        top: 42.5%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+ }
+ @media (min-width: 1200px) { 
+    #about .container {
+        width: 75% !important;
+    }
+    #work .container {
+        width: 75% !important;
+    }
+    #services .container {
+        width: 75% !important;
+    }
+    #blog .container {
+        width: 75% !important;
+    }
+    .img-btn {
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #contact-form {
+        background-image: url(../imgs/overlay-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 146vh;
+    }
+    .undeline button{
+        width: 40%;
+    } 
+    .img-btn {
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+ }
+ @media (min-width: 1400px) { 
+    #about .container {
+        width: 75% !important;
+    }
+    #work .container {
+        width: 75% !important;
+    }
+    #services .container {
+        width: 75% !important;
+    }
+    #blog .container {
+        width: 75% !important;
+    }
+    .img-btn {
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #contact-form {
+        background-image: url(../imgs/overlay-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 135vh;
+    }
+    .undeline button{
+        width: 40%;
+    } 
+    .img-btn {
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #contact-form .container {
+        width: 75% !important;
+    }
+ }
